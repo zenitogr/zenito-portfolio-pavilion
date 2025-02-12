@@ -9,6 +9,8 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    https: {}, // Changed from false to empty object to match ServerOptions type
+    force: true,
   },
   plugins: [
     react(),
