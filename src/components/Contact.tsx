@@ -1,5 +1,4 @@
-
-import { Mail, MessageCircle, Globe, Instagram } from "lucide-react";
+import { Mail, MessageCircle, Globe, Instagram, Heart } from "lucide-react";
 import { contactInfo } from "@/config/contact";
 
 export const Contact = () => {
@@ -77,6 +76,39 @@ export const Contact = () => {
                 @{contactInfo.social.instagram}
               </p>
             </a>
+
+            <div className="p-6 rounded-xl bg-white shadow-lg">
+              <div className="flex items-center gap-4 mb-4">
+                <Heart className="w-6 h-6 text-primary" />
+                <h3 className="font-semibold">Support My Work</h3>
+              </div>
+              
+              <div className="space-y-4">
+                <img 
+                  src="/revolut-qr.png" 
+                  alt="Revolut QR Code" 
+                  className="mx-auto w-32 h-32 object-contain"
+                />
+                
+                <a
+                  href="https://revolut.me/zenitogr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-primary hover:text-primary/80 transition-colors"
+                >
+                  Revolut: revolut.me/zenitogr
+                </a>
+                
+                <a
+                  href="https://ko-fi.com/zenitogr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-primary hover:text-primary/80 transition-colors"
+                >
+                  Ko-fi: ko-fi.com/zenitogr
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
