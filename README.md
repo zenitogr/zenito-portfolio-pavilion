@@ -1,69 +1,77 @@
-# Welcome to your Lovable project
+# Chris Tsekouras Portfolio
 
-## Project info
+Full Stack Developer portfolio showcasing my journey, skills, and projects.
 
-**URL**: https://lovable.dev/projects/c306d746-e17e-41bb-836c-40290ccf7bf8
+## Overview
 
-## How can I edit this code?
+I'm a Full Stack Developer based in Athens, Greece, passionate about creating innovative solutions and helping others succeed in their tech journey. With a background in tech support, dance teaching, and programming, I bring a unique perspective to software development.
 
-There are several ways of editing your application.
+## Technologies
 
-**Use Lovable**
+- React + TypeScript
+- Tailwind CSS
+- Framer Motion
+- shadcn/ui components
+- Vite
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c306d746-e17e-41bb-836c-40290ccf7bf8) and start prompting.
+## Key Sections
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🏠 Home
 
-**Use your preferred IDE**
+- Introduction and quick navigation
+- Professional summary
+- Direct links to important sections
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 📋 Resume
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Detailed work experience
+- Educational background
+- Technical skills
+- Certifications
 
-Follow these steps:
+### 🗺️ Journey
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Interactive timeline of my career path
+- Key milestones and achievements
+- Professional development highlights
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 📬 Contact
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Professional Email: [tsekouras.x@outlook.com](mailto:tsekouras.x@outlook.com) (<tsekouras.x@outlook.com>)
+- Personal Email: [zenitogr@gmail.com](mailto:zenitogr@gmail.com) (<zenitogr@gmail.com>), [zenito@zengod.gr](mailto:zenito@zengod.gr) (<zenito@zengod.gr>)
+- Discord: [zengodgr](https://discord.com/users/zengodgr)
+- Instagram: [@zengodgr](https://www.instagram.com/zengodgr/)
+- Discord Server: [Zen Learn | ZenLight Dev](https://discord.gg/uB5XcA35hq)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## Support My Work
+
+If you find my work helpful or want to support my projects, you can contribute through:
+
+### Revolut
+
+![Revolut QR Code](/revolut-qr.png)
+
+- Direct Link: [revolut.me/zenitogr](https://revolut.me/zenitogr)
+
+### Ko-fi
+
+Support my work through Ko-fi:
+
+- [ko-fi.com/zenitogr](https://ko-fi.com/zenitogr)
+
+## Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Connect With Me
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+I'm always open to interesting conversations and collaboration opportunities. Feel free to reach out through any of the contact methods listed above!
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c306d746-e17e-41bb-836c-40290ccf7bf8) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+---
+Built with ❤️ using modern web technologies
