@@ -1,3 +1,4 @@
+import { contactInfo } from "@/config/contact";
 
 export interface Experience {
   title: string;
@@ -31,6 +32,7 @@ export interface ResumeData {
     personal: string[];
   };
   additionalActivities: string;
+  contactInfo: typeof contactInfo;
 }
 
 export const resumeData: ResumeData = {
@@ -106,5 +108,6 @@ export const resumeData: ResumeData = {
       "Team Collaboration"
     ]
   },
-  additionalActivities: "Led dance groups at the Cultural Groups of the Student Center, University of Athens. Organized dozens of dance events and classes. Experienced in event organization and community building through dance education and cultural activities."
-};
+  additionalActivities: "Led dance groups at the Cultural Groups of the Student Center, University of Athens. Organized dozens of dance events and classes. Experienced in event organization and community building through dance education and cultural activities.",
+  contactInfo: contactInfo,
+} as const;
