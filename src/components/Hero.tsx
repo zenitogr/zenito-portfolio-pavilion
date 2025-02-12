@@ -16,7 +16,7 @@ export const Hero = () => {
             Chris Tsekouras
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8">
-            Full Stack Developer | Tech Enthusiast | Dance Teacher
+            Full Stack Developer | Tech Enthusiast | Dance Teacher | Musician | Artist | Entrepreneur | Deep Thinker
           </p>
           <p className="text-base md:text-lg text-muted-foreground mb-12 leading-relaxed">
             Passionate about creating innovative solutions and helping others succeed in their tech journey.
