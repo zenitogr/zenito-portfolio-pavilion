@@ -5,26 +5,26 @@ import { Code2, HeartHandshake, Laptop, Music } from "lucide-react";
 const timelineItems = [
   {
     year: "Early Years",
-    title: "Tech Enthusiast",
-    description: "Managing Windows, Linux, and Android systems for family business",
+    title: "Tech Enthusiast | Can read documentation",
+    description: "Managing Windows, Linux, and Android | desktop, server, mobile systems | maintaining family business website for 10 years",
     icon: Laptop,
   },
   {
     year: "Career Shift",
-    title: "Dance Teacher",
-    description: "Argentine Tango and Latin dance instruction",
+    title: "Dancer | Dance Teacher",
+    description: "Argentine Tango and Latin dancer and teacher | Event organizer",
     icon: Music,
   },
   {
-    year: "Education",
-    title: "Programming Excellence",
-    description: "2-year programming school with scholarship",
+    year: "Education | Experience",
+    title: "Programming Excellence and personal experience",
+    description: "2-year programming school with scholarship | More than 20 years of personal experience",
     icon: Code2,
   },
   {
     year: "Present",
     title: "Tech Community",
-    description: "Helping no-code AI developers and building ZenLight",
+    description: "Helping no-code AI developers | building ZenLight the self-improvement social media",
     icon: HeartHandshake,
   },
 ];
