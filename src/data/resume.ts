@@ -41,7 +41,7 @@ export const resumeData: ResumeData = {
     contact: {
       address: "Aganippis 3, Zografou, Athens, 15773",
       email: "tsekouras.x@outlook.com",
-      phone: "6980012768"
+      phone: "00306980012768"
     }
   },
   experience: [
