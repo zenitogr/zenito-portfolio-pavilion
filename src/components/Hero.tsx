@@ -14,7 +14,7 @@ export const Hero = () => {
           className="max-w-3xl mx-auto"
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-            Chris Tsekouras
+            Chris Tsekouras | ZenitoGR
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8">
             Full Stack Developer | Tech Enthusiast | Dance Teacher | Musician | Artist | Entrepreneur | Deep Thinker
