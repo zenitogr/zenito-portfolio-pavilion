@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion";
-import { ArrowDownCircle } from "lucide-react";
+import { ArrowDownCircle, FileText } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
@@ -22,13 +23,22 @@ export const Hero = () => {
             Passionate about creating innovative solutions and helping others succeed in their tech journey.
             Based in Athens, Greece.
           </p>
-          <a
-            href="#journey"
-            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
-          >
-            <span>Explore My Journey</span>
-            <ArrowDownCircle className="w-5 h-5 animate-bounce" />
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <a
+              href="#journey"
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+            >
+              <span>Explore My Journey</span>
+              <ArrowDownCircle className="w-5 h-5 animate-bounce" />
+            </a>
+            <Link
+              to="/resume"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+            >
+              <FileText className="w-5 h-5" />
+              <span>View Detailed Resume</span>
+            </Link>
+          </div>
         </motion.div>
       </div>
     </section>
