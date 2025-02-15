@@ -45,6 +45,32 @@ zenito-portfolio-pavilion/
 - `apps/web`: Main website (currently Vite + React, planned migration to Next.js)
 - `packages/ui`: Shared UI components and utilities using Radix UI and shadcn
 
+## 🚀 Deployment
+
+The web app is configured for deployment on Vercel. The setup includes:
+
+### Root Configuration
+- `vercel.json` in the root configures the monorepo build:
+  ```json
+  {
+    "buildCommand": "pnpm turbo build --filter=web...",
+    "outputDirectory": "apps/web/dist"
+  }
+  ```
+  This ensures only the web app is built and deployed.
+
+### Web App Configuration
+- `apps/web/vercel.json` handles app-specific settings:
+  - Client-side routing (SPA redirects)
+  - Content-Type headers
+  - Other web app specific configurations
+
+### Deployment Notes
+- Only the `web` app is deployed to Vercel
+- Dependencies are installed using `pnpm`
+- Build process uses Turborepo for optimization
+- The `main` branch is configured for automatic deployments
+
 ## 🔧 Development Notes
 
 - The web app currently uses Vite + React and will be migrated to Next.js
