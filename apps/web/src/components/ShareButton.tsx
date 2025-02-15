@@ -84,13 +84,12 @@ export const ShareButton = ({
         case "Twitter":
         case "WhatsApp":
         case "Telegram":
+        case "Facebook":
           shareUrl = platform.shareUrl(url, currentText);
           break;
         case "LinkedIn":
           shareUrl = platform.shareUrl(url, currentTitle);
           break;
-        default:
-          shareUrl = platform.shareUrl(url);
       }
 
       window.open(shareUrl, "_blank", "noopener,noreferrer");

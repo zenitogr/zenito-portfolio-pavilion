@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ChevronLeft, Mail, MessageCircle, ExternalLink } from "lucide-react";
+import { ChevronLeft, Mail, MessageCircle, ExternalLink, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 import { resumeData } from "../data/resume";
 import { cn } from "../lib/utils";
@@ -202,6 +202,36 @@ const Resume = () => {
                     <ExternalLink className="w-3 h-3 ml-1" />
                   </a>
                   <CopyButton value={contactInfo.social.discord.server.invite} />
+                </div>
+              </div>
+              <div className="p-6 rounded-lg bg-card text-card-foreground dark:glow-accent">
+                <div className="flex items-center justify-between">
+                  <a
+                    href={contactInfo.social.github}
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="flex items-center gap-2 hover:text-accent transition-colors"
+                  >
+                    <Github className="w-4 h-4 text-accent" />
+                    <span>Personal GitHub: {contactInfo.social.github.replace('https://github.com/', '')}</span>
+                    <ExternalLink className="w-3 h-3 ml-1" />
+                  </a>
+                  <CopyButton value={contactInfo.social.github} />
+                </div>
+              </div>
+              <div className="p-6 rounded-lg bg-card text-card-foreground dark:glow-accent">
+                <div className="flex items-center justify-between">
+                  <a
+                    href={contactInfo.social.githubOrg}
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="flex items-center gap-2 hover:text-accent transition-colors"
+                  >
+                    <Github className="w-4 h-4 text-accent" />
+                    <span>Organization GitHub: {contactInfo.social.githubOrg.replace('https://github.com/', '')}</span>
+                    <ExternalLink className="w-3 h-3 ml-1" />
+                  </a>
+                  <CopyButton value={contactInfo.social.githubOrg} />
                 </div>
               </div>
             </div>

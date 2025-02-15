@@ -1,3 +1,4 @@
+import { siteConfig } from "./meta";
 
 export const contactInfo = {
   emails: {
@@ -13,5 +14,7 @@ export const contactInfo = {
       },
     },
     instagram: "zengodgr",
+    github: siteConfig.links.github,
+    githubOrg: siteConfig.links.githubOrg,
   },
 } as const;

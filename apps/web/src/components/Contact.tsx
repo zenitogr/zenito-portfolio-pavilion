@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, Globe, Instagram, Heart, ExternalLink } from "lucide-react";
+import { Mail, MessageCircle, Globe, Instagram, Heart, ExternalLink, Github } from "lucide-react";
 import { contactInfo } from "../config/contact";
 import { CopyButton } from "./CopyButton";
 
@@ -61,6 +61,48 @@ export const Contact = () => {
                 </span>
               </a>
               <CopyButton value={contactInfo.social.discord.server.invite} />
+            </div>
+          </div>
+
+          <div className="group block p-6 rounded-xl bg-card text-card-foreground dark:glow-accent">
+            <div className="flex items-center gap-4 mb-4">
+              <Github className="w-6 h-6 text-accent" />
+              <h3 className="font-semibold dark:text-glow-accent">Personal GitHub</h3>
+            </div>
+            <div className="flex items-center justify-between">
+              <a
+                href={contactInfo.social.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground group-hover:text-accent transition-colors"
+              >
+                <span className="flex items-center">
+                  {contactInfo.social.github.replace('https://github.com/', '')}
+                  <ExternalLink className="w-3 h-3 ml-1" />
+                </span>
+              </a>
+              <CopyButton value={contactInfo.social.github} />
+            </div>
+          </div>
+
+          <div className="group block p-6 rounded-xl bg-card text-card-foreground dark:glow-accent">
+            <div className="flex items-center gap-4 mb-4">
+              <Github className="w-6 h-6 text-accent" />
+              <h3 className="font-semibold dark:text-glow-accent">Organization GitHub</h3>
+            </div>
+            <div className="flex items-center justify-between">
+              <a
+                href={contactInfo.social.githubOrg}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground group-hover:text-accent transition-colors"
+              >
+                <span className="flex items-center">
+                  {contactInfo.social.githubOrg.replace('https://github.com/', '')}
+                  <ExternalLink className="w-3 h-3 ml-1" />
+                </span>
+              </a>
+              <CopyButton value={contactInfo.social.githubOrg} />
             </div>
           </div>
 
