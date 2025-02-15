@@ -8,6 +8,7 @@ import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "next-themes";
 import { ThemeToggle } from "./components/theme-toggle";
+import { ShareButton } from "./components/ShareButton";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
         <div className="fixed top-4 right-4">
           <ThemeToggle />
         </div>
+        <ShareButton />
       </TooltipProvider>
     </ThemeProvider>
   </QueryClientProvider>

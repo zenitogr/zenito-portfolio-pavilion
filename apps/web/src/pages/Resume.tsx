@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { resumeData } from "../data/resume";
 import { cn } from "../lib/utils";
 import { CopyButton } from "../components/CopyButton";
+import { ShareButton } from "../components/ShareButton";
 
 const Resume = () => {
   const { personalInfo, experience, education, skills, additionalActivities, contactInfo } = resumeData;
