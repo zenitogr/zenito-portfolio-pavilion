@@ -41,7 +41,7 @@ export const resumeData: ResumeData = {
     title: "Full Stack Developer",
     location: "Athens, Greece",
     contact: {
-      address: "Zografou, Athens, 15773",
+      address: "Zografou, Athens",
       email: "tsekouras.x@outlook.com",
       phone: "0030698****768"
     }
