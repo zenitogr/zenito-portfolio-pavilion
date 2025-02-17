@@ -144,7 +144,7 @@
     --transition-duration: 0.3s;
   }
 
-  * {
+  .theme-transition {
     transition: background-color var(--transition-duration) ease-in-out,
                 border-color var(--transition-duration) ease-in-out,
                 color var(--transition-duration) ease-in-out,

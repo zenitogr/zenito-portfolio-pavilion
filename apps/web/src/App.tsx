@@ -31,7 +31,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
-        <div className="fixed top-4 right-4">
+        <div className="fixed top-4 right-4 theme-transition">
           <ThemeToggle />
         </div>
         <ShareButton />
