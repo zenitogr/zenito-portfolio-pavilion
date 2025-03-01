@@ -115,7 +115,35 @@ export const ShareButton = ({
             damping: 20,
             delay: 1 
           }}
+          className="relative"
         >
+          <motion.div
+            className="absolute -inset-4 bg-primary/20 rounded-full blur-md"
+            animate={{
+              scale: [1, 1.4, 1],
+              opacity: [0.2, 0.4, 0.2]
+            }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut"
+            }}
+          />
+          <motion.div
+            className="absolute -inset-6 bg-primary/10 rounded-full blur-lg"
+            animate={{
+              scale: [1, 1.6, 1],
+              opacity: [0.1, 0.3, 0.1]
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+              delay: 0.5
+            }}
+          />
           <motion.div
             animate={pulseAnimation}
             whileHover={{ scale: 1.1 }}
