@@ -118,10 +118,10 @@ export const ShareButton = ({
           className="relative"
         >
           <motion.div
-            className="absolute -inset-4 bg-primary/20 rounded-full blur-md"
+            className="absolute -inset-4 border border-primary/40 rounded-full"
             animate={{
               scale: [1, 1.4, 1],
-              opacity: [0.2, 0.4, 0.2]
+              opacity: [0.4, 0.6, 0.4]
             }}
             transition={{
               duration: 1.5,
@@ -131,13 +131,26 @@ export const ShareButton = ({
             }}
           />
           <motion.div
-            className="absolute -inset-6 bg-primary/10 rounded-full blur-lg"
+            className="absolute -inset-8 border border-primary/50 rounded-full"
             animate={{
-              scale: [1, 1.6, 1],
-              opacity: [0.1, 0.3, 0.1]
+              scale: [1, 1.8, 1],
+              opacity: [0.5, 0.7, 0.5]
             }}
             transition={{
-              duration: 2,
+              duration: 2.5,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut"
+            }}
+          />
+          <motion.div
+            className="absolute -inset-12 border border-primary/30 rounded-full"
+            animate={{
+              scale: [1, 2, 1],
+              opacity: [0.3, 0.5, 0.3]
+            }}
+            transition={{
+              duration: 3,
               repeat: Infinity,
               repeatType: "reverse",
               ease: "easeInOut",
