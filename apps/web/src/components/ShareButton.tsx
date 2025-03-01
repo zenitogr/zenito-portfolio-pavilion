@@ -126,11 +126,11 @@ export const ShareButton = ({
                 <Button
                   variant="default"
                   size="lg"
-                  className={`rounded-full shadow-lg hover:shadow-xl transition-shadow px-6 py-3 ${className}`}
+                  className={`rounded-full shadow-lg hover:shadow-xl transition-shadow px-6 py-3 bg-primary text-primary-foreground hover:bg-primary/90 ${className}`}
                   title="Share"
                 >
                   <Share2 className="w-5 h-5 mr-3" />
-                  <span>Share</span>
+                  <span className="font-medium">Share</span>
                 </Button>
               </DialogTrigger>
               <DialogContent className="fixed top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-[200] sm:max-w-md">
