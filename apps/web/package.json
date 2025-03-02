@@ -24,9 +24,10 @@
     "recharts": "^2.12.7",
     "sonner": "^1.5.0",
     "tailwind-merge": "^2.5.2",
+    "ui": "workspace:*",
     "vaul": "^0.9.3",
     "zod": "^3.23.8",
-    "ui": "workspace:*"
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

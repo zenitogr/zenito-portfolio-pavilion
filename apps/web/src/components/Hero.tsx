@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-primary/5 to-transparent">
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-primary/5 to-transparent">
       <div className="container mx-auto px-4 py-16 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

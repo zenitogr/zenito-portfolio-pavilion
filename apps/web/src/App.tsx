@@ -7,8 +7,8 @@ import Index from "./pages/Index";
 import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "next-themes";
-import { ThemeToggle } from "./components/theme-toggle";
 import { ShareButton } from "./components/ShareButton";
+import { Layout } from "./components/Layout";
 
 const queryClient = new QueryClient();
 
@@ -25,16 +25,14 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/resume" element={<Resume />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
+            <Route element={<Layout />}>
+              <Route path="/" element={<Index />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="*" element={<NotFound />} />
+            </Route>
           </Routes>
+          <ShareButton />
         </BrowserRouter>
-        <div className="fixed top-4 right-4 theme-transition">
-          <ThemeToggle />
-        </div>
-        <ShareButton />
       </TooltipProvider>
     </ThemeProvider>
   </QueryClientProvider>
