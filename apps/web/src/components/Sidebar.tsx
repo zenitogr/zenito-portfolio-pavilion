@@ -50,6 +50,7 @@ export function Sidebar() {
               <div key={item.href}>
                 <Link
                   to={item.href}
+                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                   className={cn(
                     "flex h-10 w-full items-center justify-start rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground",
                     currentPath === item.href
